@@ -5,7 +5,7 @@ Tested on Arduino IDE 1.6.5 and OPEN-SMART 2.6" display module.
 
 YouTube video:
 
-https://youtu.be/JAJcGKE-0k0
+https://youtu.be/YC-wqZnCGQ4
 
 ## Features
 
