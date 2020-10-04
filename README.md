@@ -1,8 +1,10 @@
 # ST7567_FB
-Fast SPI graphics library for ST7567 128x64 LCD with frame buffer
-Tested on Arduino IDE 1.6.5 and OPEN-SMART 2.6" display module
+Fast SPI graphics library for ST7567 128x64 LCD with frame buffer.
+
+Tested on Arduino IDE 1.6.5 and OPEN-SMART 2.6" display module.
 
 YouTube video:
+
 https://youtu.be/JAJcGKE-0k0
 
 ## Features
