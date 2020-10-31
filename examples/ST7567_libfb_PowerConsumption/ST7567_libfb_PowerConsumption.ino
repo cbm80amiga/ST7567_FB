@@ -145,46 +145,54 @@ void loop()
   wait();
 
   // 0xAA vertically
-  for(i=0;i<128*64/8;i++) lcd.scr[i]=0xaa;
+  //for(i=0;i<128*64/8;i++) lcd.scr[i]=0xaa;
+  lcd.cls();
+  for(i=0;i<128;i+=2) lcd.drawLineVfast(i,0,63,1); // 0xaa v
   lcd.display();
   wait();
 
   // 0xAA horizontally
   lcd.cls();
-  for(i=0;i<64;i+=2) lcd.drawLineHfast(0,127,i,1); // 0xaa
+  for(i=0;i<64;i+=2) lcd.drawLineHfast(0,127,i,1); // 0xaa h
   lcd.display();
   wait();
 
   // 0xF0 vertically
-  for(i=0;i<128*64/8;i++) lcd.scr[i]=0xf0;
+  //for(i=0;i<128*64/8;i++) lcd.scr[i]=0xf0;
+  lcd.cls();
+  for(i=0;i<16;i++) lcd.fillRect(i*8,0,4,64,1); // 0xf0 v
   lcd.display();
   wait();
 
   // 0xFO horizontally
   lcd.cls();
-  for(i=0;i<8;i++) lcd.fillRect(0,i*8,128,4,1); // 0xf0
+  for(i=0;i<8;i++) lcd.fillRect(0,i*8,128,4,1); // 0xf0 h
   lcd.display();
   wait();
 
   // 0x11 vertically
-  for(i=0;i<128*64/8;i++) lcd.scr[i]=0x11;
+  //for(i=0;i<128*64/8;i++) lcd.scr[i]=0x11;
+  lcd.cls();
+  for(i=0;i<128/4;i++) lcd.drawLineVfast(i*4+3,0,63,1); // 0x11 v
   lcd.display();
   wait();
 
   // 0x11 horizontally
   lcd.cls();
-  for(i=0;i<16;i++) lcd.drawLineHfast(0,127,i*4+3,1); // 0x11
+  for(i=0;i<64/4;i++) lcd.drawLineHfast(0,127,i*4+3,1); // 0x11 h
   lcd.display();
   wait();
 
   // 0x01 vertically
-  for(i=0;i<128*64/8;i++) lcd.scr[i]=0x01;
+  //for(i=0;i<128*64/8;i++) lcd.scr[i]=0x01;
+  lcd.cls();
+  for(i=0;i<128/8;i++) lcd.drawLineVfast(i*8+7,0,63,1); // 0x01 v
   lcd.display();
   wait();
 
   // 0xO1 horizontally
   lcd.cls();
-  for(i=0;i<8;i++) lcd.drawLineHfast(0,127,i*8+7,1); // 0x01
+  for(i=0;i<64/8;i++) lcd.drawLineHfast(0,127,i*8+7,1); // 0x01 h
   lcd.display();
   wait();
 
